@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.responsive-heading { font-size: 20px; }
+.responsive-text { font-size: 14px; }
+
+@media (min-width: 768px) {
+    .responsive-heading { font-size: 26px; }
+    .responsive-text { font-size: 16px; }
+}
+
+@media (min-width: 992px) {
+    .responsive-heading { font-size: 32px; }
+    .responsive-text { font-size: 18px; }
+}
+
+.task1-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.my-box {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .my-box {
+        width: calc(50% - 10px); 
+    }
+}
+
+@media (min-width: 992px) {
+    .my-box {
+        width: calc(33.333% - 10px); 
+    }
+}
+
+.portfolio-page {
+    background-color: #fcfcfc;
+}
+
+.custom-title {
+    color: #333;
+}
+
+.sidebar {
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .sidebar-text {
+        font-size: 14px;
+        color: gray;
+    }
+    .portfolio-page footer {
+        font-size: 12px;
+    }
+}
